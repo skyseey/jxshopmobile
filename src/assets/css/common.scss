@@ -1,0 +1,4 @@
+// 通过scss函数封装一下px转换成rem
+@function pxTorem($px) {
+  @return $px/100 + rem;
+}

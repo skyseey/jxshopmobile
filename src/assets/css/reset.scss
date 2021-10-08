@@ -1,0 +1,17 @@
+* {
+  padding: 0px;
+  margin: 0px;
+}
+html,
+body,
+#app {
+  width: 100%;
+  height: 100%;
+}
+/* 移动字体不要奇数 要偶数 */
+#app {
+  font-size: 14px;
+}
+li {
+  list-style: none;
+}
