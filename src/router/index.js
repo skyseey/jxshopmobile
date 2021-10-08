@@ -10,11 +10,12 @@ const routes = [
     name: "Home",
     component: () => import("../views/Home.vue"),
   },
-  // {
-  //   path: "/Home1",
-  //   name: "Home1",
-  //   component: () => import("../views/Home1.vue"),
-  // },
+  // 分类列表
+  {
+    path: "/cates",
+    name: "Cates",
+    component: () => import("../views/Cates.vue"),
+  },
 ];
 
 const router = new VueRouter({
