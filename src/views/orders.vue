@@ -1,7 +1,7 @@
 <!--
  * @Author: your name
  * @Date: 2021-10-08 19:49:47
- * @LastEditTime: 2021-10-09 16:12:16
+ * @LastEditTime: 2021-10-09 16:15:33
  * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: \jxshopmobile\src\views\orders.vue

@@ -3,16 +3,19 @@
     <router-view></router-view>
     <!-- tabnav -->
     <van-tabbar v-model="active" active-color="#39a9ed">
-      <van-tabbar-item name="home" icon="home-o" @click="indexFn"
+      <van-tabbar-item name="home" icon="home-o" @click="jump('/')"
         >首页</van-tabbar-item
       >
-      <van-tabbar-item name="search" icon="search" @click="catesFn"
+      <van-tabbar-item name="like-o" icon="like-o" @click="jump('/list')"
+        >种草</van-tabbar-item
+      >
+      <van-tabbar-item name="search" icon="search" @click="jump('/cates')"
+        >分类</van-tabbar-item
+      >
+      <van-tabbar-item name="friends" icon="friends-o" @click="jump('/orders')"
         >购物车</van-tabbar-item
       >
-      <van-tabbar-item name="friends" icon="friends-o" @click="orderFn"
-        >订单</van-tabbar-item
-      >
-      <van-tabbar-item name="setting" icon="setting-o" @click="MyFn"
+      <van-tabbar-item name="setting" icon="setting-o" @click="jump('/login')"
         >我的</van-tabbar-item
       >
     </van-tabbar>
