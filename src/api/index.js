@@ -1,25 +1,33 @@
 import request from "./request";
 
-/**
- * 登录
- * @param {Object} params { username: '', password: ''}
- */
-export function login(params) {
-  return request({
-    url: "/users/login",
-    method: "post",
-    data: params,
-  });
-}
+// /**
+//  *首页
+//  * @param {Object} params { username: '', password: ''}
+//  */
+// export function getIndexApi(params) {
+//   return request({
+//     url: "/users/login",
+//     method: "get",
+//     params,
+//   });
+// }
 
-/**
- * 获取当前用户的信息
- * @param {Object} params { userid, token }
- */
-export function getuserinfo(params) {
+// /**
+//  * 热买
+//  * @param {Object} params { userid, token }
+//  */
+// export function gethotsellApi(params) {
+//   return request({
+//     url: "/users/getuserinfo",
+//     method: "get",
+//     params,
+//   });
+// } //kg.zhaodashen.cn/v1/goods/like.jsp
+
+export const gethotsellApi = (params) => {
   return request({
-    url: "/users/getuserinfo",
+    url: "/goods/like.jsp",
     method: "get",
     params,
   });
-}
+};
