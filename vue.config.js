@@ -10,10 +10,11 @@ module.exports = {
       },
     },
   },
+  // vue跨域配置
   devServer: {
     proxy: {
-      api: {
-        target: "http://kg.zhaodashen.cn/mt/admin/",
+      "/api": {
+        target: "http://kg.zhaodashen.cn/v1/",
         changeOrigin: true, // 是否允许跨域
         secure: false, // 关闭SSL证书验证https协议接口需要改成true
         pathRewrite: {
@@ -21,7 +22,6 @@ module.exports = {
           "^/api": "", //路径重写
         },
       },
-      // ....
     },
   },
 };

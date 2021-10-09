@@ -137,7 +137,13 @@
 </template>
 
 <script>
+import { gethotsellApi } from "@/api/index.js";
 export default {
+  created() {
+    gethotsellApi().then((res) => {
+      console.log(res);
+    });
+  },
   data() {
     return {
       active: "home",
