@@ -5,20 +5,20 @@ module.exports = {
     resolve: {
       alias: {
         "@": path.resolve(__dirname, "src"),
-        "~mock": path.resolve(__dirname, "mock"),
+        "~": path.resolve(__dirname, "src"),
         style: path.resolve(__dirname, "src/style"),
       },
     },
   },
   devServer: {
     proxy: {
-      api: {
-        target: "http://kg.zhaodashen.cn/mt/admin/",
+      任意名称: {
+        target: "http://kg.zhaodashen.cn/v1/",
         changeOrigin: true, // 是否允许跨域
         secure: false, // 关闭SSL证书验证https协议接口需要改成true
         pathRewrite: {
           // 重写路径请求
-          "^/api": "", //路径重写
+          "^/任意名称": "", //路径重写
         },
       },
       // ....

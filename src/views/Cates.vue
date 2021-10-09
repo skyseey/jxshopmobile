@@ -16,14 +16,14 @@
           v-if="active === 0"
           src="@/assets/imgs/Cates1.png"
           alt=""
-          style="width:253px;height:111px"
+          style="width:252px;height:111px"
         />
         <img
           class="img"
           v-if="active"
           :src="imgs[active]"
           alt=""
-          style="width:253px;height:111px"
+          style="width:252px;height:111px"
         />
 
         <!-- 分类标题 -->
@@ -46,6 +46,7 @@
 </template>
 
 <script>
+import { getCatesApi } from "@/api/cates";
 export default {
   data() {
     return {
@@ -108,7 +109,22 @@ export default {
           { title: "彩妆工具", img: require("@/assets/imgs/Cates1-tools.png") },
         ],
       ],
+      params: {
+        pagenum: 1,
+        pagesize: 5,
+        level: 2,
+      },
     };
+  },
+  created() {
+    this.initDataFn();
+  },
+  methods: {
+    initDataFn() {
+      getCatesApi(this.params).then((res) => {
+        console.log(res);
+      });
+    },
   },
 };
 </script>
