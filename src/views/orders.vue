@@ -1,3 +1,11 @@
+<!--
+ * @Author: your name
+ * @Date: 2021-10-08 19:49:47
+ * @LastEditTime: 2021-10-09 16:15:33
+ * @LastEditors: Please set LastEditors
+ * @Description: In User Settings Edit
+ * @FilePath: \jxshopmobile\src\views\orders.vue
+-->
 <template>
   <div class="orders">
     <P>购物车</P>
@@ -13,17 +21,11 @@
 
 <script>
 export default {
-  data() {
-    return {
-      checked: [],
-    };
+  method: {
+    onSubmit: {},
   },
-  methods: {
-    onSubmit() {
-      console.log(111);
-    },
-  },
-};
+  checked: {},
+}
 </script>
 
 <style scoped lang="scss">
@@ -37,6 +39,9 @@ export default {
     width: px2rem(129);
     height: px2rem(129);
     margin: px2rem(129) px2rem(129) px2rem(129) px2rem(129);
+  }
+  .van-submit-bar {
+    bottom: 50px;
   }
 }
 </style>
