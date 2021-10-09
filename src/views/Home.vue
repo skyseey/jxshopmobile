@@ -15,7 +15,7 @@
       <van-tabbar-item name="friends" icon="friends-o" @click="jump('/orders')"
         >购物车</van-tabbar-item
       >
-      <van-tabbar-item name="setting" icon="setting-o" @click="jump('/users')"
+      <van-tabbar-item name="setting" icon="setting-o" @click="jump('/login')"
         >我的</van-tabbar-item
       >
     </van-tabbar>
