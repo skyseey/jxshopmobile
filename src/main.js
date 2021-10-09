@@ -20,12 +20,19 @@ Vue.use(VueAwesomeSwiper /* { default options with global component } */);
 // 全局配置vantUI
 import Vant from "vant";
 import "vant/lib/index.css";
-
 Vue.use(Vant);
 
 import { Lazyload } from "vant";
 
 Vue.use(Lazyload);
+
+// 配置 全局混入 && 过滤器
+import Mixin from "@/utils/mixins.js";
+Vue.use({
+  install() {
+    Vue.component("Mixin", Mixin);
+  },
+});
 
 new Vue({
   router,
