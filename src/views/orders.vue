@@ -1,7 +1,8 @@
+<<<<<<< HEAD
 <!--
  * @Author: your name
  * @Date: 2021-10-08 19:49:47
- * @LastEditTime: 2021-10-09 10:48:33
+ * @LastEditTime: 2021-10-09 14:55:16
  * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: \jxshopmobile\src\views\orders.vue
