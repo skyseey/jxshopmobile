@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 /*
  * @Author: your name
  * @Date: 2021-10-08 19:49:47
@@ -13,12 +12,15 @@ import VueRouter from "vue-router";
 import Show from "@/views/Show.vue";
 import List from "@/views/List.vue";
 import Cates from "@/views/Cates.vue";
-import Login from "@/views/Login.vue";
 import Orders from "@/views/Orders.vue";
 import Users from "@/views/Users.vue";
+import Login from "@/views/login/Index.vue";
+import LoginTel from "@/views/login/LoginTel.vue";
+import LoginMb from "@/views/login/LoginMb.vue";
+import Register from "@/views/Register.vue";
+import Changepwd from "@/views/Changepwd.vue";
 
-
-Vue.use(VueRouter)
+Vue.use(VueRouter);
 
 const routes = [
   // 这里添加各自的路由
@@ -29,39 +31,41 @@ const routes = [
     children: [
       { path: "/show", alias: "/", component: Show }, //首页
       { path: "/list", component: List }, //列表页
-      { path: "/cats", component: Cates }, //购物车
+      { path: "/cates", component: Cates }, //购物车
       { path: "/login", component: Login }, //登录页
       { path: "/orders", component: Orders }, //订单
       { path: "/users", component: Users }, //用户
     ],
   },
-  // 分类列表
   {
-    path: "/cates",
-    name: "Cates",
-    component: () => import("../views/Cates.vue"),
+    path: "/login",
+    component: Login,
   },
   {
-    path: "/list",
-    name: "list",
-    component: () => import("../views/list.vue"),
+    path: "/login/mb",
+    component: LoginMb,
   },
   {
-    path: "/orders",
-    name: "orders",
-    component: () => import("../views/orders.vue"),
+    path: "/login/tel",
+    component: LoginTel,
+  },
+  {
+    path: "/register",
+    component: Register,
+  },
+  {
+    path: "/changepwd",
+    component: Changepwd,
   },
   // {
   //   path: "/Home1",
   //   name: "Home1",
   //   component: () => import("../views/Home1.vue"),
   // },
-]
+];
 
 const router = new VueRouter({
   routes,
-  list,
-  orders,
-})
+});
 
-export default router
+export default router;
