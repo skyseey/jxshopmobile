@@ -25,7 +25,7 @@ export default {
     onSubmit: {},
   },
   checked: {},
-}
+};
 </script>
 
 <style scoped lang="scss">
