@@ -1,8 +1,7 @@
-<<<<<<< HEAD
 <!--
  * @Author: your name
  * @Date: 2021-10-08 19:49:47
- * @LastEditTime: 2021-10-09 14:55:16
+ * @LastEditTime: 2021-10-09 16:12:16
  * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: \jxshopmobile\src\views\orders.vue
@@ -21,7 +20,12 @@
 </template>
 
 <script>
-export default {}
+export default {
+  method: {
+    onSubmit: {},
+  },
+  checked: {},
+}
 </script>
 
 <style scoped lang="scss">
@@ -35,6 +39,9 @@ export default {}
     width: px2rem(129);
     height: px2rem(129);
     margin: px2rem(129) px2rem(129) px2rem(129) px2rem(129);
+  }
+  .van-submit-bar {
+    bottom: 50px;
   }
 }
 </style>
