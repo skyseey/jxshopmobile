@@ -12,9 +12,13 @@ import VueRouter from "vue-router";
 import Show from "@/views/Show.vue";
 import List from "@/views/List.vue";
 import Cates from "@/views/Cates.vue";
-import Login from "@/views/Login.vue";
 import Orders from "@/views/Orders.vue";
 import Users from "@/views/Users.vue";
+import Login from "@/views/login/Index.vue";
+import LoginTel from "@/views/login/LoginTel.vue";
+import LoginMb from "@/views/login/LoginMb.vue";
+import Register from "@/views/Register.vue";
+import Changepwd from "@/views/Changepwd.vue";
 
 Vue.use(VueRouter);
 
@@ -33,6 +37,31 @@ const routes = [
       { path: "/users", component: Users }, //用户
     ],
   },
+  {
+    path: "/login",
+    component: Login,
+  },
+  {
+    path: "/login/mb",
+    component: LoginMb,
+  },
+  {
+    path: "/login/tel",
+    component: LoginTel,
+  },
+  {
+    path: "/register",
+    component: Register,
+  },
+  {
+    path: "/changepwd",
+    component: Changepwd,
+  },
+  // {
+  //   path: "/Home1",
+  //   name: "Home1",
+  //   component: () => import("../views/Home1.vue"),
+  // },
 ];
 
 const router = new VueRouter({

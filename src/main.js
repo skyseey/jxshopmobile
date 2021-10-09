@@ -9,6 +9,7 @@ Vue.config.productionTip = false;
 import "@/utils/rem.js";
 import "@/utils/filters.js";
 import "@/assets/css/reset.scss";
+import "@/assets/font/iconfont.css";
 
 import VueAwesomeSwiper from "vue-awesome-swiper";
 
