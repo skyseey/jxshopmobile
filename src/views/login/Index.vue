@@ -7,6 +7,7 @@
       left-text="返回"
       left-arrow
       border:false
+      @click-left="$router.go(-1)"
     />
     <!-- header -->
     <div class="main">

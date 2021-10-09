@@ -7,6 +7,7 @@
       left-text="返回"
       left-arrow
       border:false
+      @click-left="$router.go(-1)"
     />
     <!-- header -->
 
@@ -42,7 +43,7 @@
       </van-form>
       <!-- form -->
       <div @click="jump('/login/tel')">验证码快捷登录</div>
-      <div class="iconfont icon-weixin1"></div>
+      <div class="iconfont icon-weixin1" @click="jump('/users')"></div>
       <div>
         <span @click="jump('/changepwd')">找回密码</span>&nbsp;|&nbsp;<span
           @click="jump('/register')"
@@ -62,7 +63,9 @@ export default {
     };
   },
   methods: {
-    onSubmit() {},
+    onSubmit() {
+      console.log(this.username);
+    },
   },
 };
 </script>

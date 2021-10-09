@@ -1,18 +1,18 @@
-import Vue from "vue"
-import VueRouter from "vue-router"
+import Vue from "vue";
+import VueRouter from "vue-router";
 
-import Show from "@/views/Show.vue"
-import List from "@/views/List.vue"
-import Cates from "@/views/Cates.vue"
-import Orders from "@/views/Orders.vue"
-import Users from "@/views/Users.vue"
-import Login from "@/views/login/Index.vue"
-import LoginTel from "@/views/login/LoginTel.vue"
-import LoginMb from "@/views/login/LoginMb.vue"
-import Register from "@/views/Register.vue"
-import Changepwd from "@/views/Changepwd.vue"
+import Show from "@/views/Show.vue";
+import List from "@/views/List.vue";
+import Cates from "@/views/Cates.vue";
+import Orders from "@/views/Orders.vue";
+import Users from "@/views/Users.vue";
+import Login from "@/views/login/Index.vue";
+import LoginTel from "@/views/login/LoginTel.vue";
+import LoginMb from "@/views/login/LoginMb.vue";
+import Register from "@/views/Register.vue";
+import Changepwd from "@/views/Changepwd.vue";
 
-Vue.use(VueRouter)
+Vue.use(VueRouter);
 
 const routes = [
   //这里添加各自的路由
@@ -45,10 +45,10 @@ const routes = [
     path: "/changepwd",
     component: Changepwd,
   },
-]
+];
 
 const router = new VueRouter({
   routes,
-})
+});
 
-export default router
+export default router;
