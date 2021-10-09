@@ -41,7 +41,6 @@ export default {};
 .login {
   height: 100%;
   width: 100%;
-  display: flex;
   flex-direction: column;
   .navbar {
     color: #333;
@@ -52,14 +51,13 @@ export default {};
   }
   .main {
     width: 100%;
-    flex: 1;
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
     .image {
       width: 1.35rem;
       height: 0.4rem;
+      margin-top: 1.5rem;
       margin-bottom: 0.4rem;
       img {
         width: 100%;
