@@ -45,9 +45,14 @@
         </div>
       </van-form>
       <!-- form -->
-      <div>验证码快捷登录</div>
+      <div @click="jump('/login/mb')">验证码快捷登录</div>
       <div class="iconfont icon-weixin1"></div>
-      <div><span>找回密码</span>&nbsp;|&nbsp;<span>注册账号</span></div>
+      <div>
+        <span @click="jump('/changepwd')">找回密码</span>&nbsp;|&nbsp;<span
+          @click="jump('/register')"
+          >注册账号</span
+        >
+      </div>
     </div>
   </div>
 </template>

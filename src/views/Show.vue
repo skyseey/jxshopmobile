@@ -33,9 +33,9 @@
     <!-- hot sell -->
     <van-grid :column-num="5" :border="false">
       <van-grid-item
-        v-for="value in 10"
-        :key="value"
-        icon="photo-o"
+        v-for="(item, index) in hotimgs"
+        :key="index"
+        :icon="item.img"
         text="文字"
         :border="true"
       />
@@ -145,6 +145,18 @@ export default {
       images: [
         "https://img01.yzcdn.cn/vant/apple-1.jpg",
         "https://img01.yzcdn.cn/vant/apple-2.jpg",
+      ],
+      hotimgs: [
+        { id: "1", img: require("@/assets/logo.png") },
+        { id: "2", img: "https://img01.yzcdn.cn/vant/cat.jpeg" },
+        { id: "3", img: "https://img01.yzcdn.cn/vant/cat.jpeg" },
+        { id: "4", img: "https://img01.yzcdn.cn/vant/cat.jpeg" },
+        { id: "5", img: "https://img01.yzcdn.cn/vant/cat.jpeg" },
+        { id: "6", img: "https://img01.yzcdn.cn/vant/cat.jpeg" },
+        { id: "7", img: "https://img01.yzcdn.cn/vant/cat.jpeg" },
+        { id: "8", img: "https://img01.yzcdn.cn/vant/cat.jpeg" },
+        { id: "9", img: "https://img01.yzcdn.cn/vant/cat.jpeg" },
+        { id: "10", img: "https://img01.yzcdn.cn/vant/cat.jpeg" },
       ],
     };
   },

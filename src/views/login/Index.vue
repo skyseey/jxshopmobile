@@ -26,6 +26,7 @@
         type="primary"
         size="large"
         color="#9f8286"
+        @click="jump('/login/mb')"
         >账号登录</van-button
       >
       <!-- login-button -->

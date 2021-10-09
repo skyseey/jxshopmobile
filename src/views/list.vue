@@ -1,11 +1,3 @@
-<!--
- * @Author: your name
- * @Date: 2021-10-08 19:49:47
- * @LastEditTime: 2021-10-09 14:55:45
- * @LastEditors: Please set LastEditors
- * @Description: In User Settings Edit
- * @FilePath: \jxshopmobile\src\views\list.vue
--->
 <template>
   <div class="list">
     <p>文章列表</p>
