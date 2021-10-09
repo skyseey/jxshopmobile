@@ -38,10 +38,6 @@ const routes = [
     ],
   },
   {
-    path: "/login",
-    component: Login,
-  },
-  {
     path: "/login/mb",
     component: LoginMb,
   },
