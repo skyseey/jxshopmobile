@@ -10,6 +10,26 @@ const routes = [
     name: "Home",
     component: () => import("../views/Home.vue"),
   },
+  {
+    path: "/login",
+    component: () => import("../views/login/Index.vue"),
+  },
+  {
+    path: "/login/mb",
+    component: () => import("../views/login/LoginMb.vue"),
+  },
+  {
+    path: "/login/tel",
+    component: () => import("../views/login/LoginTel.vue"),
+  },
+  {
+    path: "/register",
+    component: () => import("../views/Register.vue"),
+  },
+  {
+    path: "/changepwd",
+    component: () => import("../views/Changepwd.vue"),
+  },
   // {
   //   path: "/Home1",
   //   name: "Home1",
