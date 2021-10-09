@@ -1,5 +1,15 @@
 import Vue from "vue";
 import VueRouter from "vue-router";
+import Show from "@/views/Show.vue";
+import List from "@/views/List.vue";
+import Cats from "@/views/Cats.vue";
+import Orders from "@/views/Orders.vue";
+import Users from "@/views/Users.vue";
+import Login from "@/views/login/Index.vue";
+import LoginTel from "@/views/login/LoginTel.vue";
+import LoginMb from "@/views/login/LoginMb.vue";
+import Register from "@/views/Register.vue";
+import Changepwd from "@/views/Changepwd.vue";
 
 Vue.use(VueRouter);
 
@@ -9,32 +19,34 @@ const routes = [
     path: "/",
     name: "Home",
     component: () => import("../views/Home.vue"),
+    children: [
+      { path: "/show", alias: "/", component: Show }, //首页
+      { path: "/list", component: List }, //列表页
+      { path: "/cats", component: Cats }, //购物车
+      { path: "/orders", component: Orders }, //订单
+      { path: "/users", component: Users }, //用户
+    ],
   },
   {
     path: "/login",
-    component: () => import("../views/login/Index.vue"),
+    component: Login,
   },
   {
     path: "/login/mb",
-    component: () => import("../views/login/LoginMb.vue"),
+    component: LoginMb,
   },
   {
     path: "/login/tel",
-    component: () => import("../views/login/LoginTel.vue"),
+    component: LoginTel,
   },
   {
     path: "/register",
-    component: () => import("../views/Register.vue"),
+    component: Register,
   },
   {
     path: "/changepwd",
-    component: () => import("../views/Changepwd.vue"),
+    component: Changepwd,
   },
-  // {
-  //   path: "/Home1",
-  //   name: "Home1",
-  //   component: () => import("../views/Home1.vue"),
-  // },
 ];
 
 const router = new VueRouter({
