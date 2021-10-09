@@ -11,8 +11,20 @@
     >
       <template #content class="content">
         <!-- ##显示图片 -->
-        <img v-if="active === 0" src="@/assets/imgs/Cates1.png" alt="" />
-        <img v-if="active" :src="imgs[active]" alt="" />
+        <img
+          class="img"
+          v-if="active === 0"
+          src="@/assets/imgs/Cates1.png"
+          alt=""
+          style="width:253px;height:111px"
+        />
+        <img
+          class="img"
+          v-if="active"
+          :src="imgs[active]"
+          alt=""
+          style="width:253px;height:111px"
+        />
 
         <!-- 分类标题 -->
         <p class="title">
@@ -107,7 +119,7 @@ export default {
   .van-tree-select__nav {
     background-color: #fff;
   }
-  img {
+  .img {
     width: pxTorem(253);
     height: pxTorem(111);
   }

@@ -12,7 +12,18 @@
 </template>
 
 <script>
-export default {};
+export default {
+  data() {
+    return {
+      checked: [],
+    };
+  },
+  methods: {
+    onSubmit() {
+      console.log(111);
+    },
+  },
+};
 </script>
 
 <style scoped lang="scss">
