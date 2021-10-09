@@ -9,15 +9,23 @@
       :items="items"
       :main-active-index.sync="active"
     >
-      <template #content>
+      <template #content class="content">
+        <!-- ##显示图片 -->
         <img v-if="active === 0" src="@/assets/imgs/Cates1.png" alt="" />
         <img v-if="active" :src="imgs[active]" alt="" />
-        <van-grid :column-num="3">
+
+        <!-- 分类标题 -->
+        <p class="title">
+          —<span>{{ items[active].text }}分类</span>—
+        </p>
+
+        <!-- ##宫格图片文字 -->
+        <van-grid :column-num="3" icon-size="48px">
           <van-grid-item
-            v-for="value in 6"
-            :key="value"
-            icon="photo-o"
-            text="文字"
+            v-for="(item, index) in cates[active]"
+            :key="index"
+            :icon="item.img"
+            :text="item.title"
           />
         </van-grid>
       </template>
@@ -50,6 +58,44 @@ export default {
         require("@/assets/imgs/Cates5.png"),
         require("@/assets/imgs/Cates6.png"),
       ],
+      cates: [
+        [
+          { title: "面部", img: require("@/assets/imgs/Cates1-face.png") },
+          { title: "眼部", img: require("@/assets/imgs/Cates1-eye.png") },
+          { title: "唇部", img: require("@/assets/imgs/Cates1-chun.png") },
+          { title: "彩妆工具", img: require("@/assets/imgs/Cates1-tools.png") },
+        ],
+        [
+          { title: "面部", img: require("@/assets/imgs/Cates1-face.png") },
+          { title: "眼部", img: require("@/assets/imgs/Cates1-eye.png") },
+          { title: "唇部", img: require("@/assets/imgs/Cates1-chun.png") },
+          { title: "彩妆工具", img: require("@/assets/imgs/Cates1-tools.png") },
+        ],
+        [
+          { title: "面部", img: require("@/assets/imgs/Cates1-face.png") },
+          { title: "眼部", img: require("@/assets/imgs/Cates1-eye.png") },
+          { title: "唇部", img: require("@/assets/imgs/Cates1-chun.png") },
+          { title: "彩妆工具", img: require("@/assets/imgs/Cates1-tools.png") },
+        ],
+        [
+          { title: "面部", img: require("@/assets/imgs/Cates1-face.png") },
+          { title: "眼部", img: require("@/assets/imgs/Cates1-eye.png") },
+          { title: "唇部", img: require("@/assets/imgs/Cates1-chun.png") },
+          { title: "彩妆工具", img: require("@/assets/imgs/Cates1-tools.png") },
+        ],
+        [
+          { title: "面部", img: require("@/assets/imgs/Cates1-face.png") },
+          { title: "眼部", img: require("@/assets/imgs/Cates1-eye.png") },
+          { title: "唇部", img: require("@/assets/imgs/Cates1-chun.png") },
+          { title: "彩妆工具", img: require("@/assets/imgs/Cates1-tools.png") },
+        ],
+        [
+          { title: "面部", img: require("@/assets/imgs/Cates1-face.png") },
+          { title: "眼部", img: require("@/assets/imgs/Cates1-eye.png") },
+          { title: "唇部", img: require("@/assets/imgs/Cates1-chun.png") },
+          { title: "彩妆工具", img: require("@/assets/imgs/Cates1-tools.png") },
+        ],
+      ],
     };
   },
 };
@@ -58,9 +104,23 @@ export default {
 <style lang="scss" scoped>
 @import "@/assets/css/common.scss";
 .cates {
+  .van-tree-select__nav {
+    background-color: #fff;
+  }
   img {
-    width: pxTorem(263);
+    width: pxTorem(253);
     height: pxTorem(111);
+  }
+  .title {
+    width: 100%;
+    text-align: center;
+    padding: pxTorem(25) 0;
+
+    span {
+      font-size: pxTorem(12);
+      color: #333;
+      padding: 0 pxTorem(5);
+    }
   }
 }
 </style>

@@ -24,15 +24,4 @@ module.exports = {
       // ....
     },
   },
-  chainWebpack: (config) => {
-    // 移除 prefetch 插件
-    config.plugins.delete("prefetch");
-
-    // 通过 externals 加载外部CDN资源
-    config.set("externals", {
-      vue: "Vue",
-      echarts: "echarts",
-      axios: "axios",
-    });
-  },
 };
