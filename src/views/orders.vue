@@ -1,12 +1,3 @@
-<<<<<<< HEAD
-<!--
- * @Author: your name
- * @Date: 2021-10-08 19:49:47
- * @LastEditTime: 2021-10-09 14:55:16
- * @LastEditors: Please set LastEditors
- * @Description: In User Settings Edit
- * @FilePath: \jxshopmobile\src\views\orders.vue
--->
 <template>
   <div class="orders">
     <P>购物车</P>
@@ -21,7 +12,7 @@
 </template>
 
 <script>
-export default {}
+export default {};
 </script>
 
 <style scoped lang="scss">
