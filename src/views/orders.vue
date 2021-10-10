@@ -38,7 +38,7 @@ export default {
   img {
     width: px2rem(129);
     height: px2rem(129);
-    margin: px2rem(129) px2rem(129) px2rem(129) px2rem(129);
+    margin: px2rem(129) px2rem(100) px2rem(129) px2rem(129);
   }
   .van-submit-bar {
     bottom: 50px;

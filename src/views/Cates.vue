@@ -46,7 +46,7 @@
 </template>
 
 <script>
-import { getCatesApi } from "@/api/cates";
+import { getCatesApi } from "@/api/index";
 export default {
   data() {
     return {

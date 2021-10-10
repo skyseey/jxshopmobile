@@ -31,3 +31,11 @@ export const gethotsellApi = (params) => {
     params,
   });
 };
+// 分类
+export const getCatesApi = (params) => {
+  return request({
+    url: "/category/index.jsp",
+    method: "get",
+    params,
+  });
+};

@@ -9,7 +9,7 @@ const request = axios.create({
   // 根据环境 设置不同的baseURL
   // baseURL: 'http://localhost:3000/api'
   // baseURL: "http://kg.zhaodashen.cn/v1/",
-  baseURL: "/api",
+  baseURL: "api/",
 });
 
 // 请求拦截器 - 所有的请求开始之前先到此处
